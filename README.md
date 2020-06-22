@@ -1,6 +1,6 @@
 # scala-coqparse
 
-An experimental coq parser implemented in scala using the [https://github.com/djspiewak/parseback](Parseback) Framework. 
+An experimental coq parser implemented in scala using the [Parseback](https://github.com/djspiewak/parseback) Framework. 
 
 ## How to run?
 
