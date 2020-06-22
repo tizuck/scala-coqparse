@@ -5,7 +5,7 @@ An experimental coq parser implemented in scala using the Parseback Framwork.
 ## How to run?
 
 For a parsing example:
-- Install sbt from here: (https://www.scala-sbt.org/)[Sbt].
+- Install sbt from here: [Sbt](https://www.scala-sbt.org/).
 - Run "sbt clean compile" in the top level directory of this project.
 - Run "sbt run"in the top level directory of this project.
 
