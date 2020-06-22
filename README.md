@@ -2,7 +2,7 @@
 
 An experimental coq parser implemented in scala using the Parseback Framwork. 
 
-##How to run?
+## How to run?
 
 For a parsing example:
 - Install sbt from here: (https://www.scala-sbt.org/)[Sbt].
