@@ -496,7 +496,7 @@ object termParse {
     }
 
     def addNotation(notation:model.vernacTypes.vernacExpr.Notation):Unit = {
-      val synData = model.metasyntax.compute_syntax_data(notation.ssyntaxMods._1,notation.ssyntaxMods._2)(debugPrint = true)
+      val synData = model.metasyntax.compute_syntax_data(notation.ssyntaxMods._1,notation.ssyntaxMods._2)(debugPrint = false)
       val parser = buildNotationParser(synData.pa_syntax_data._2,synData)
       val levelToInsert = synData.level._2
       makeParserEntry(parser,levelToInsert)

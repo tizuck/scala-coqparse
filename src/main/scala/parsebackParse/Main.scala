@@ -27,8 +27,7 @@ object Main extends App {
       */
     termParse.oprConstr.addNotation(result.value.right.get.toList.head.asInstanceOf[Notation])
     termParse.oprConstr.addNotation(result2.value.right.get.toList.head.asInstanceOf[Notation])
-    println(termParse.oprConstr.reservedNotationExtensions)
-    println(ParserHelper.printParser(termParse.oprConstr(200),30,0))
+
     val generatedParserResult = termParse.oprConstr(200)(generatedParserInput)
     if(generatedParserResult.value.isRight) {
       val term = generatedParserResult.value.right.get

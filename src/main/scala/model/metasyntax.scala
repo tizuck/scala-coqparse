@@ -356,7 +356,7 @@ object metasyntax {
     val assoc = if(mods.assoc.isDefined) mods.assoc else Some(NonA)
     if(debugPrint)println("Determined Associativity: " + assoc)
     val newMods = mods.copy(assoc = assoc)
-    val analyzation = analyze_notation_tokens(df,mods.only_printing)(debug = true)
+    val analyzation = analyze_notation_tokens(df,mods.only_printing)(debug = debugPrint)
     if(debugPrint)println("Recursive variable: " + analyzation._1 + " , Main variables: " + analyzation._2 + " , symbols: " + analyzation._3)
     //TODO: implement checks
     val precedence = find_precedence(mods.custom,mods.level,mods.eTypes,analyzation._3,mods.only_printing)
